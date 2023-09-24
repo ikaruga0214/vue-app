@@ -1,0 +1,35 @@
+GET http://localhost:3001/subscribers/
+
+###
+
+GET http://localhost:3001/subscribers/64d9721acf1fd9faa8c4cbf5
+
+###
+
+PATCH http://localhost:3001/subscribers/64d9721acf1fd9faa8c4cbf5
+Content-Type: application/json
+
+{
+  "email": "bbchannel@extra.com"
+}
+
+###
+POST http://localhost:3001/subscribers/ayaya/
+Content-Type: application/json
+
+{
+  "email": "ayaya@golden.com",
+  "password": "5141919"
+}
+
+###
+DELETE http://localhost:3001/subscribers/64f351eaf7a397fe4dff0e69
+
+###
+POST http://localhost:3001/register/
+Content-Type: application/json
+
+{
+  "email": "ayaya@golden.com",
+  "password": "5141919"
+}
