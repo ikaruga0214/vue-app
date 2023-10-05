@@ -11,32 +11,7 @@ import Item from "./model/Item.js";
 import subscriberRouter from "./routes/subscribers.js";
 import protectRouter from "./routes/protect.js";
 
-const data1 = [
-  {
-    _id: new mongoose.Types.ObjectId(),
-    name: "長波様",
-    cost: 200,
-    image: "/naganami.png",
-    description: "艦これ最棒的小GIRL",
-    num: 0,
-  },
-  {
-    _id: new mongoose.Types.ObjectId(),
-    name: "夕雲",
-    cost: 300,
-    description: "ママ",
-    image: "/yuugumo.jpg",
-    num: 1,
-  },
-  {
-    _id: new mongoose.Types.ObjectId(),
-    name: "マジンカイザー",
-    cost: 699,
-    description: "最強",
-    image: "/kaiser.jpg",
-    num: 2,
-  },
-];
+
 
 const app = express();
 app.use(cors());
